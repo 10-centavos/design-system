@@ -5,6 +5,7 @@
     | "expense"
     | "savings"
     | "debt"
+    | "info"
     | "warning"
     | "danger"
     | "success" = "neutral";
@@ -17,6 +18,7 @@
     expense: "bg-financial-expense-subtle text-financial-expense",
     savings: "bg-financial-savings-subtle text-financial-savings",
     debt: "bg-financial-debt-subtle text-financial-debt",
+    info: "bg-info-subtle text-info-default",
     warning: "bg-warning-subtle text-text-warning",
     danger: "bg-danger-subtle text-text-danger",
     success: "bg-success-subtle text-text-success"

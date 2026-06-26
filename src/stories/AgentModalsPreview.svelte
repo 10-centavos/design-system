@@ -6,7 +6,7 @@
   import Card from "../components/Card.svelte";
   import ChartPanel from "../components/ChartPanel.svelte";
 
-  const models = [
+  const modals = [
     {
       title: "Budget Reviewer",
       tone: "warning",
@@ -32,13 +32,13 @@
   <header class="grid gap-component-sm">
     <div class="flex items-center gap-component-sm text-brand-default">
       <Bot aria-hidden="true" class="size-component-lg" />
-      <span class="text-sm font-semibold">Modelos de agente</span>
+      <span class="text-sm font-semibold">Modais de agente</span>
     </div>
     <h1 class="text-3xl font-semibold">Padrões para dashboards assistidos</h1>
   </header>
 
   <div class="grid gap-component-md lg:grid-cols-3">
-    {#each models as item}
+    {#each modals as item}
       <Card className="shadow-none">
         <div class="grid gap-component-md">
           <div class="flex items-center justify-between gap-component-md">
@@ -49,7 +49,7 @@
             <h2 class="text-lg font-semibold">{item.title}</h2>
             <p class="text-sm text-text-muted">{item.summary}</p>
           </div>
-          <Button variant="secondary">Usar modelo</Button>
+          <Button variant="secondary">Usar modal</Button>
         </div>
       </Card>
     {/each}

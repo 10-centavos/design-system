@@ -69,6 +69,8 @@ This contract does NOT govern:
 * The agent MUST build UI using component composition.
 * The agent MUST keep components small and reusable.
 * The agent SHOULD avoid deeply nested component trees.
+* The agent MUST classify new UI by Atomic Design level before implementation.
+* The agent MUST prefer existing atoms and molecules before introducing organisms, templates, or pages.
 
 ---
 
@@ -86,6 +88,8 @@ This contract does NOT govern:
 
   * numeric typography for financial values
   * color semantics for financial states
+
+* The agent MAY use a vibrant, game-inspired presentation only when financial state meaning remains explicit through text, icon, sign, or progress semantics.
 
 ---
 

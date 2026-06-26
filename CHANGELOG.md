@@ -1,5 +1,12 @@
 # Changelog
 
+## Unreleased
+
+- Adopted Atomic Design as the composition model for foundations, atoms, molecules, organisms, templates, and pages.
+- Updated contracts and docs to allow a more vibrant, game-inspired financial UI while preserving semantic financial meaning.
+- Shifted primitive palette toward more saturated brand, info, success, warning, danger, and savings colors.
+- Added `info` as a documented `Badge` tone.
+
 ## 0.1.0
 
 - Added agent-compatible repository entry points.

@@ -40,6 +40,7 @@ For agent consultation, the design system MUST provide:
 - Agent profiles in `agents/`
 - Machine-readable design tokens
 - Component inventory with allowed variants and states
+- Atomic Design mapping for foundations, atoms, molecules, organisms, templates, and pages
 - Mapping between financial states and semantic tokens
 - Implementation examples for Svelte + Tailwind
 - Validation commands for token usage, accessibility, linting, and tests
@@ -157,12 +158,14 @@ Each flow MUST include:
 - [ ] Add `docs/accessibility-checklist.md`.
 - [ ] Add implementation examples that agents can copy without improvising.
 - [ ] Add a decision log for approved changes to tokens, components, and variants.
+- [x] Add `docs/atomic-design.md` to define Atomic Design levels for agent consumption.
 
 ## Agent Operating Rules
 
 Agents MUST:
 
 - Use contracts as the authority.
+- Use Atomic Design levels when classifying new UI.
 - Use semantic tokens only in UI.
 - Stop on missing tokens, missing component definitions, or contract conflicts.
 - Prefer existing components before proposing new ones.

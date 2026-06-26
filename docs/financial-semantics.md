@@ -2,6 +2,8 @@
 
 Financial meaning must be explicit through color, label, sign, or status text.
 
+The palette may be vibrant, neon, and game-inspired, but financial meaning remains conventional and semantic.
+
 ## Money Types
 
 - Income: `color.financial.income`, positive sign, income badge.
@@ -27,6 +29,14 @@ Financial meaning must be explicit through color, label, sign, or status text.
 - Income, expense, savings, debt, warning, and success chart series must include a visible label.
 - Trend and distribution charts must include a text summary so the financial meaning is not communicated by color alone.
 - Monetary values referenced near charts must use `MoneyValue` or `formatMoney`.
+
+## Vibrant UI Guardrails
+
+- Brand and info colors can carry game-like energy, neon accents, agent states, quests, and navigation emphasis.
+- Success remains the semantic family for income, funded, and completed states.
+- Danger remains the semantic family for expense, overspent, and destructive states.
+- Warning remains the semantic family for partial, pending, and attention states.
+- Decorative intensity must not change financial meaning.
 
 ## Formatting
 

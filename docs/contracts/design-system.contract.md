@@ -38,6 +38,7 @@ This contract does NOT govern:
 * Design Tokens: Atomic visual values (colors, spacing, typography)
 * Semantic Tokens: Tokens mapped to meaning (e.g., success, danger)
 * Component: Reusable UI building block
+* Atomic Design: Composition model that organizes UI from tokens and atoms through molecules, organisms, templates, and pages
 * Variant: Visual or behavioral variation of a component
 * State: UI condition (hover, active, disabled, loading)
 * Financial State: UI state representing money condition (funded, overspent, etc.)
@@ -53,6 +54,8 @@ This contract does NOT govern:
 * The system MUST maintain visual consistency across all screens.
 * The system MUST represent financial states visually and clearly.
 * The system MUST prioritize readability of numeric values.
+* The system MUST use a vibrant, neon-leaning visual language for engagement while preserving financial semantics, contrast, and readability.
+* The system MUST follow Atomic Design as its composition model.
 
 ---
 
@@ -72,6 +75,24 @@ This contract does NOT govern:
 * The system MUST NOT create new component variants without updating this contract.
 * Components MUST support defined states: default, hover, active, disabled, loading.
 * Components SHOULD support accessibility attributes (ARIA, focus states).
+
+### Atomic Design
+
+* Design tokens are the foundation layer.
+* Atoms are the smallest reusable controls and display primitives.
+* Molecules combine atoms into financial UI units.
+* Organisms combine molecules into larger product regions.
+* Templates define responsive screen structure without product-specific data ownership.
+* Pages bind templates to concrete content, states, and flows.
+* New UI work MUST identify the Atomic Design level it belongs to before implementation.
+* Components MUST be reused at the lowest suitable Atomic Design level before introducing higher-level compositions.
+
+### Visual Energy
+
+* Brand, info, success, warning, and danger colors MAY be saturated, neon-leaning, and playful.
+* Financial meaning MUST remain conventional: income and funded states use success semantics, expenses and overspent states use danger semantics, partial states use warning semantics, and goals in progress use brand semantics.
+* Vibrant color MUST be paired with label, icon, sign, progress, or status text for financial meaning.
+* Vibrant surfaces MUST still meet WCAG AA contrast requirements.
 
 ---
 
@@ -120,6 +141,14 @@ This contract does NOT govern:
 ### Decision: Component-Based Architecture
 
 * Rationale: Reduces duplication and enforces consistency.
+
+### Decision: Atomic Design Composition
+
+* Rationale: Gives agents and engineers a shared hierarchy for composing UI without inventing patterns.
+
+### Decision: Vibrant Financial Interface
+
+* Rationale: The product can feel game-like and engaging while preserving the semantic clarity required for financial decisions.
 
 ---
 

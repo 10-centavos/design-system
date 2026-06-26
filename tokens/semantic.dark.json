@@ -23,7 +23,7 @@
     "border": {
       "default": "{color.neutral.700}",
       "strong": "{color.neutral.500}",
-      "focus": "{color.brand.100}",
+      "focus": "{color.info.100}",
       "danger": "{color.danger.100}",
       "success": "{color.success.100}",
       "warning": "{color.warning.100}"
@@ -72,7 +72,7 @@
       "empty": "{color.neutral.300}",
       "overspent": "{color.danger.100}",
       "goalComplete": "{color.success.100}",
-      "goalProgress": "{color.brand.100}"
+      "goalProgress": "{color.info.100}"
     }
   }
 }

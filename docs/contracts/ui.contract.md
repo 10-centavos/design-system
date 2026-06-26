@@ -71,6 +71,8 @@ This contract does NOT govern:
   * reusable
   * composable
 
+* Components MUST declare or document their Atomic Design level as atom, molecule, organism, template, or page.
+
 * Components MUST separate:
 
   * logic (script)
@@ -151,6 +153,15 @@ theme: {
 <button class="bg-brand hover:bg-brand-hover">
 ```
 
+### Atomic Design Composition
+
+* Atoms MUST remain presentation-focused and reusable.
+* Molecules MUST compose atoms without owning page-level business logic.
+* Organisms MUST compose molecules into meaningful financial regions such as dashboard summaries, budget sections, transaction panels, or goal panels.
+* Templates MUST define responsive layout structure and state placement.
+* Pages MUST provide concrete content and flow state.
+* Storybook examples MAY demonstrate templates and pages, but product applications remain responsible for real data integration.
+
 ---
 
 ### UI States
@@ -178,6 +189,8 @@ theme: {
   * success → income
   * danger → expense / overspent
   * warning → partial
+
+* Game-inspired UI MAY use vibrant brand and info treatment for engagement, but financial states MUST keep the semantic mappings above.
 
 ---
 

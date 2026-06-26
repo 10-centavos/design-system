@@ -23,12 +23,12 @@
   import MoneyValue from "../components/MoneyValue.svelte";
   import TransactionItem from "../components/TransactionItem.svelte";
 
-  export let model: "agent-command" | "budget-review" | "planning-room" = "agent-command";
+  export let view: "agent-command" | "budget-review" | "planning-room" = "agent-command";
 
   const navigation = [
-    { label: "Dashboard", icon: LayoutDashboard, active: model === "agent-command" },
-    { label: "Revisao", icon: ListChecks, active: model === "budget-review" },
-    { label: "Planejamento", icon: Target, active: model === "planning-room" }
+    { label: "Dashboard", icon: LayoutDashboard, active: view === "agent-command" },
+    { label: "Revisao", icon: ListChecks, active: view === "budget-review" },
+    { label: "Planejamento", icon: Target, active: view === "planning-room" }
   ];
 </script>
 
@@ -40,7 +40,7 @@
         10 Centavos
       </div>
 
-      <nav class="flex flex-wrap items-center gap-component-xs text-sm text-text-muted" aria-label="Modelos">
+      <nav class="flex flex-wrap items-center gap-component-xs text-sm text-text-muted" aria-label="Modais">
         {#each navigation as item}
           <a class={`flex items-center gap-component-sm rounded-component-md px-component-sm py-component-xs ${item.active ? "bg-brand-default text-brand-contrast" : ""}`} href="/">
             <svelte:component this={item.icon} aria-hidden="true" class="size-component-md" />
@@ -56,7 +56,7 @@
     </div>
   </header>
 
-  {#if model === "agent-command"}
+  {#if view === "agent-command"}
     <main class="mx-auto grid max-w-screen-xl gap-layout-lg p-layout-md">
       <section class="grid gap-component-md">
         <div class="flex flex-wrap items-start justify-between gap-component-md">
@@ -102,11 +102,11 @@
               <Button variant="primary">Gerar ajuste</Button>
             </div>
           </Card>
-          <GoalCard title="Reserva de emergencia" current={7200} target={12000} className="shadow-none" />
+          <GoalCard title="Reserva de emergencia" current={7200} target={12000} />
         </aside>
       </section>
     </main>
-  {:else if model === "budget-review"}
+  {:else if view === "budget-review"}
     <main class="mx-auto grid max-w-screen-xl gap-layout-lg p-layout-md">
       <section class="grid gap-component-md">
         <div class="flex items-center gap-component-sm text-warning-default">
@@ -133,7 +133,6 @@
               { label: "Alocado", tone: "brand", values: [1200, 500, 900] },
               { label: "Gasto", tone: "expense", values: [840, 620, 0] }
             ]}
-            className="shadow-none"
           />
           <Alert tone="danger" title="Acao necessaria" message="Transporte esta overspent e deve ser revisado." />
         </aside>
@@ -150,7 +149,7 @@
       </section>
 
       <section class="grid gap-layout-md lg:grid-cols-3">
-        <Card className="shadow-none">
+        <Card>
           <div class="grid gap-component-md">
             <div class="flex items-center gap-component-sm text-financial-income">
               <ArrowUpCircle aria-hidden="true" class="size-component-md" />
@@ -160,7 +159,7 @@
           </div>
         </Card>
 
-        <Card className="shadow-none">
+        <Card>
           <div class="grid gap-component-md">
             <div class="flex items-center gap-component-sm text-financial-expense">
               <ArrowDownCircle aria-hidden="true" class="size-component-md" />
@@ -170,7 +169,7 @@
           </div>
         </Card>
 
-        <Card className="border-success-default bg-success-subtle shadow-none">
+        <Card className="border-success-default bg-success-subtle">
           <div class="grid gap-component-md">
             <div class="flex items-center gap-component-sm text-text-success">
               <CheckCircle2 aria-hidden="true" class="size-component-md" />
@@ -190,7 +189,6 @@
           { label: "Saldo", tone: "brand", values: [8420, 8100, 8800, 9300] },
           { label: "Reserva", tone: "savings", values: [7200, 7400, 7600, 7900] }
         ]}
-        className="shadow-none"
       />
     </main>
   {/if}

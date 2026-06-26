@@ -37,3 +37,5 @@ Token paths become hyphenated class keys:
 - Components must not reference primitive tokens directly.
 - Dark mode changes semantic token values through `[data-theme="dark"]`.
 - Component tokens document defaults and map back to semantic tokens.
+- Primitive colors may be vivid, but UI consumes semantic tokens so financial states remain stable.
+- Atomic Design foundations start at tokens; atoms, molecules, organisms, templates, and pages compose from these generated semantic classes.

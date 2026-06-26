@@ -41,6 +41,9 @@ This contract does NOT govern:
 ```
 /src
   /components
+    /atoms
+    /molecules
+    /organisms
   /features
   /pages
   /layouts
@@ -65,6 +68,8 @@ This contract does NOT govern:
   * reusable
   * composable
 
+* Components SHOULD be organized or documented by Atomic Design level: atoms, molecules, organisms, templates, and pages.
+
 * Components MUST NOT:
 
   * contain business logic
@@ -75,6 +80,8 @@ This contract does NOT govern:
 
   * container (logic)
   * presentational (UI)
+
+* Higher-level UI MUST compose lower-level Atomic Design components before adding new abstractions.
 
 ---
 
@@ -205,6 +212,10 @@ Examples:
 ### Decision: Component Reusability First
 
 * Rationale: Reduces duplication and speeds up development.
+
+### Decision: Atomic Design Taxonomy
+
+* Rationale: Clear component levels reduce ambiguity for agents and keep product screens composed from stable primitives.
 
 ---
 

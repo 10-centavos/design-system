@@ -11,7 +11,7 @@
         "background": "{color.brand.default}",
         "backgroundHover": "{color.brand.hover}",
         "text": "{color.brand.contrast}",
-        "radius": "{radius.component.md}",
+        "radius": "{radius.component.full}",
         "paddingX": "{spacing.component.lg}",
         "paddingY": "{spacing.component.sm}"
       },
@@ -20,7 +20,7 @@
         "backgroundHover": "{color.background.muted}",
         "text": "{color.text.default}",
         "border": "{color.border.default}",
-        "radius": "{radius.component.md}",
+        "radius": "{radius.component.full}",
         "paddingX": "{spacing.component.lg}",
         "paddingY": "{spacing.component.sm}"
       },
@@ -28,7 +28,7 @@
         "background": "{color.danger.default}",
         "backgroundHover": "{color.danger.hover}",
         "text": "{color.danger.contrast}",
-        "radius": "{radius.component.md}",
+        "radius": "{radius.component.full}",
         "paddingX": "{spacing.component.lg}",
         "paddingY": "{spacing.component.sm}"
       }

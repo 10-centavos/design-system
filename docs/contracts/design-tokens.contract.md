@@ -56,6 +56,7 @@ This contract does NOT govern:
 * The system MUST NOT allow components to use primitive tokens directly.
 
 * The system MUST use semantic tokens as the default interface for UI.
+* Token names MUST remain semantic even when primitive values become more vibrant, neon, or experimental.
 
 ---
 
@@ -113,6 +114,8 @@ Examples:
   * goal states
 
 * Financial tokens MUST map to semantic colors.
+* Financial tokens MUST preserve conventional meaning even when the primitive palette is vivid, neon, or highly saturated.
+* The system MUST NOT use decorative colors to override income, expense, overspent, funded, partial, empty, or goal semantics.
 
 ---
 
@@ -154,6 +157,10 @@ Examples:
 ### Decision: Finance-Specific Token Layer
 
 * Rationale: Financial clarity is a core product requirement.
+
+### Decision: Vibrant Primitive Palette With Semantic Guardrails
+
+* Rationale: Primitive colors can support a playful, game-inspired interface, while semantic tokens keep financial interpretation stable and accessible.
 
 ### Decision: Token-Driven Theming
 

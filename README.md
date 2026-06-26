@@ -19,10 +19,11 @@ This repository is structured for both humans and agents. Start with `TODO.md`, 
 - `agents/`: role definitions for specialist agents.
 - `docs/contracts/`: binding contracts for design, tokens, UI, implementation, code, and agents.
 - `docs/`: agent guidance, component inventory, token map, financial semantics, accessibility checklist.
+- `docs/atomic-design.md`: Atomic Design taxonomy for foundations, atoms, molecules, organisms, templates, and pages.
 - `docs/approvals/`: delivery review records.
 - `tokens/`: primitive, semantic, and component design tokens.
 - `src/components/`: Svelte design system components.
-- `src/stories/`: Storybook-only examples for foundations, icons, models, and composed layouts.
+- `src/stories/`: Storybook-only examples for foundations, icons, modals, and composed layouts.
 - `src/lib/`: shared utilities.
 - `src/styles/`: generated token CSS.
 - `scripts/`: build and validation scripts.
@@ -52,3 +53,5 @@ In the repository settings, set Pages to use GitHub Actions as the source.
 ## Agent Rule
 
 Agents MUST NOT implement product UI directly from memory. They MUST read `TODO.md`, the contracts, and the relevant specialist profile first.
+
+Components follow an Atomic Design-inspired model. New UI should be classified as an atom, molecule, organism, template, or page before implementation.

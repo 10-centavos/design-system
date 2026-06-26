@@ -7,7 +7,7 @@ Agents use this repository as a contract-driven design system.
 1. Read `TODO.md`.
 2. Read all files in `docs/contracts/` listed by `TODO.md`.
 3. Read the relevant file in `agents/`.
-4. Read `docs/component-inventory.md`, `docs/token-map.md`, `docs/financial-semantics.md`, and `docs/accessibility-checklist.md`.
+4. Read `docs/atomic-design.md`, `docs/component-inventory.md`, `docs/token-map.md`, `docs/financial-semantics.md`, and `docs/accessibility-checklist.md`.
 5. Inspect `tokens/` and `src/components/` before creating or changing UI.
 
 ## Stop Conditions
@@ -16,6 +16,7 @@ Stop and report if:
 
 - A token required by a component is missing.
 - A component variant is not documented.
+- A requested UI level is unclear under the Atomic Design model.
 - A financial state has no semantic mapping.
 - A contract contradicts another contract.
 - A requested screen cannot be built from existing components.
@@ -25,6 +26,7 @@ Stop and report if:
 Frontend output must include:
 
 - Svelte components or screens.
+- Atomic Design level for new or changed UI.
 - Token-based Tailwind classes only.
 - Loading, disabled, error, empty, and success states where applicable.
 - Accessibility behavior.

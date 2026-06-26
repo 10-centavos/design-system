@@ -36,6 +36,8 @@ This contract does NOT govern:
 * Flow: A sequence of user interactions to achieve a goal
 * Screen: A UI state or page
 * State: UI condition (loading, error, etc.)
+* Template: Atomic Design screen structure that defines layout, regions, and state placement
+* Page: Atomic Design screen instance with concrete content and product state
 * Budget: Allocation of money into categories
 * Funded: Budget category has allocated money
 * Overspent: Expenses exceed allocated budget
@@ -66,6 +68,8 @@ Provide a high-level view of financial status.
   * `card` components for sections
   * `numeric.typography` for values
   * semantic colors for financial states
+
+* The dashboard MUST be composed as an Atomic Design page using template regions, organism-level panels, molecule-level financial rows/cards, and atom-level controls.
 
 #### States
 
@@ -115,6 +119,8 @@ Allow users to allocate and track budget categories.
   * progress bar
   * status badge
 
+* Budget management MUST compose molecule-level category rows inside organism-level budget regions.
+
 #### States
 
 * Overspent:
@@ -153,6 +159,8 @@ Display and manage financial transactions.
   * list item component
   * badge for category
   * color-coded amount
+
+* Transaction lists MUST compose transaction molecules inside organism-level list regions.
 
 #### States
 
@@ -195,6 +203,8 @@ Allow users to create a new transaction.
   * select dropdown
   * primary button
 
+* Add transaction forms MUST compose atom-level fields and buttons into a form organism.
+
 #### States
 
 * Loading:
@@ -233,6 +243,8 @@ Track savings goals.
   * percentage
   * status
 
+* Financial goals MUST compose goal molecules inside goal-list organisms.
+
 #### States
 
 * Completed:
@@ -247,6 +259,7 @@ Track savings goals.
 ## 6. Constraints
 
 * All UI MUST use Design System components
+* All screens MUST follow the Atomic Design composition model
 * All styling MUST use Design Tokens
 * All numeric values MUST use numeric typography
 * All flows MUST support:

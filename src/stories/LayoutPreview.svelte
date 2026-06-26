@@ -91,27 +91,78 @@
         </div>
       </Card>
 
-      <Card className="border-brand-default bg-brand-subtle shadow-none">
+      <Card className="border-brand-default bg-brand-subtle shadow-elevated">
         <div class="grid gap-component-md">
-          <div class="flex items-center gap-component-sm text-brand-default">
-            <Bot aria-hidden="true" class="size-component-lg" />
-            <h2 class="text-xl font-semibold">Agente em modo de ataque</h2>
+          <div class="flex flex-wrap items-start justify-between gap-component-md">
+            <div class="flex items-center gap-component-md">
+              <div class="grid size-16 grid-cols-4 gap-1 rounded-component-sm border border-border-focus bg-background-surface p-2 shadow-surface" aria-hidden="true">
+                <span class="bg-brand-default"></span>
+                <span class="bg-brand-default"></span>
+                <span class="bg-brand-hover"></span>
+                <span class="bg-brand-default"></span>
+                <span class="bg-brand-hover"></span>
+                <span class="bg-warning-default"></span>
+                <span class="bg-warning-default"></span>
+                <span class="bg-brand-hover"></span>
+                <span class="bg-brand-default"></span>
+                <span class="bg-background-muted"></span>
+                <span class="bg-background-muted"></span>
+                <span class="bg-brand-default"></span>
+                <span class="bg-success-default"></span>
+                <span class="bg-brand-default"></span>
+                <span class="bg-brand-hover"></span>
+                <span class="bg-success-default"></span>
+              </div>
+              <div class="grid gap-component-xs">
+                <div class="flex items-center gap-component-sm text-sm font-semibold uppercase text-brand-default">
+                  <Bot aria-hidden="true" class="size-component-md" />
+                  Agente 07
+                </div>
+                <h2 class="text-2xl font-bold">Modo ataque</h2>
+              </div>
+            </div>
+            <Badge tone="warning">boss: overspend</Badge>
           </div>
+
+          <div class="grid gap-component-sm rounded-component-md border border-border-default bg-background-surface p-component-md">
+            <div class="flex items-center justify-between gap-component-sm text-xs font-semibold uppercase text-text-muted">
+              <span>energia da reserva</span>
+              <span class="font-numeric text-brand-default">72%</span>
+            </div>
+            <div class="grid grid-cols-10 gap-component-xs" aria-hidden="true">
+              <span class="h-2 rounded-component-sm bg-success-default"></span>
+              <span class="h-2 rounded-component-sm bg-success-default"></span>
+              <span class="h-2 rounded-component-sm bg-success-default"></span>
+              <span class="h-2 rounded-component-sm bg-success-default"></span>
+              <span class="h-2 rounded-component-sm bg-success-default"></span>
+              <span class="h-2 rounded-component-sm bg-success-default"></span>
+              <span class="h-2 rounded-component-sm bg-success-default"></span>
+              <span class="h-2 rounded-component-sm bg-background-muted"></span>
+              <span class="h-2 rounded-component-sm bg-background-muted"></span>
+              <span class="h-2 rounded-component-sm bg-background-muted"></span>
+            </div>
+          </div>
+
           <div class="grid gap-component-sm text-sm">
-            <p class="text-text-default">Prioridade: reduzir overspend e liberar mais XP para a reserva.</p>
-            <p class="text-text-muted">Sugestao de hoje: mover parte do excesso para a meta de emergencia.</p>
+            <p class="text-text-default">Prioridade: derrubar overspend e liberar mais XP para a reserva.</p>
+            <p class="text-text-muted">Combo de hoje: mover parte do excesso para a meta de emergencia.</p>
           </div>
+
           <div class="flex flex-wrap gap-component-sm">
             <Badge tone="success">quest pronta</Badge>
             <Badge tone="warning">loot pendente</Badge>
             <Badge tone="info">semana 4</Badge>
           </div>
-          <div class="flex flex-wrap gap-component-sm">
+
+          <div class="grid gap-component-sm sm:grid-cols-2">
             <Button variant="primary">
               <Zap aria-hidden="true" class="size-component-md" />
               Usar poder
             </Button>
-            <Button variant="secondary">Ver combo</Button>
+            <Button variant="secondary">
+              <Trophy aria-hidden="true" class="size-component-md text-warning-default" />
+              Ver combo
+            </Button>
           </div>
         </div>
       </Card>

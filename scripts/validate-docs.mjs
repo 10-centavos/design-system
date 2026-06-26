@@ -8,6 +8,7 @@ const requiredFiles = [
   "CHANGELOG.md",
   "TODO.md",
   "docs/agent-consumption.md",
+  "docs/atomic-design.md",
   "docs/component-inventory.md",
   "docs/token-map.md",
   "docs/financial-semantics.md",

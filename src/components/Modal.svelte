@@ -39,13 +39,14 @@
 {#if open}
   <dialog
     open
-    class="fixed inset-0 z-50 m-0 h-full w-full max-w-none bg-background-canvas/70 p-layout-md backdrop-blur-sm"
+    class="fixed inset-0 z-50 m-0 h-full w-full max-w-none bg-background-canvas/82 p-layout-md backdrop-blur-md"
     aria-labelledby={titleId}
     aria-describedby={description ? descriptionId : undefined}
     onclick={handleBackdropClick}
   >
     <div class="flex min-h-full items-center justify-center">
-      <section class={`grid w-full gap-component-lg rounded-component-lg border border-border-default bg-background-surface p-component-lg shadow-elevated ${sizeClass} ${className}`}>
+      <section class={`grid w-full gap-component-lg rounded-component-lg border border-brand-default bg-background-surface p-component-lg shadow-elevated ${sizeClass} ${className}`}>
+        <div class="h-1 w-full rounded-component-full bg-brand-default" aria-hidden="true"></div>
         <header class="flex items-start justify-between gap-component-md">
           <div class="grid gap-component-xs">
             {#if title}
@@ -59,7 +60,7 @@
           {#if dismissible}
             <button
               type="button"
-              class="inline-flex size-component-lg items-center justify-center rounded-component-md text-text-muted transition-colors duration-normal ease-standard hover:bg-background-muted hover:text-text-default focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus"
+              class="inline-flex size-component-lg items-center justify-center rounded-component-sm border border-border-default bg-background-muted text-text-muted transition-colors duration-normal ease-standard hover:border-border-focus hover:bg-brand-subtle hover:text-brand-default focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus"
               aria-label="Fechar modal"
               onclick={close}
             >
@@ -72,7 +73,7 @@
           <slot />
         </div>
 
-        <footer class="flex flex-wrap items-center justify-end gap-component-sm">
+        <footer class="flex flex-wrap items-center justify-end gap-component-sm border-t border-border-default pt-component-md">
           <slot name="footer" />
         </footer>
       </section>
