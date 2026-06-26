@@ -15,7 +15,7 @@
 </script>
 
 <button
-  class={`inline-flex items-center justify-center gap-component-sm rounded-component-full px-component-lg py-component-sm font-semibold shadow-surface transition-colors duration-normal ease-standard active:shadow-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus disabled:cursor-not-allowed disabled:opacity-60 ${variantClass} ${className}`}
+  class={`inline-flex shrink-0 items-center justify-center gap-component-sm whitespace-nowrap rounded-component-full px-component-lg py-component-sm font-semibold shadow-surface transition-colors duration-normal ease-standard active:shadow-none focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus disabled:cursor-not-allowed disabled:opacity-60 ${variantClass} ${className}`}
   {type}
   disabled={disabled || loading}
   aria-busy={loading}

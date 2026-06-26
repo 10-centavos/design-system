@@ -12,6 +12,8 @@ Approved.
 
 - Approved Atomic Design as the design system composition model.
 - Approved a more vibrant, game-inspired visual direction for engagement.
+- Approved shock-pink and magenta warning accents where financial meaning remains explicit.
+- Approved decorative pixel-canvas motion and more expressive chart animation.
 - Condition: financial states must keep semantic mappings and never rely on color alone.
 - Condition: product screens must classify new UI as atom, molecule, organism, template, or page before implementation.
 

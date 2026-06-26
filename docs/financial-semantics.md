@@ -35,7 +35,7 @@ The palette may be vibrant, neon, and game-inspired, but financial meaning remai
 - Brand and info colors can carry game-like energy, neon accents, agent states, quests, and navigation emphasis.
 - Success remains the semantic family for income, funded, and completed states.
 - Danger remains the semantic family for expense, overspent, and destructive states.
-- Warning remains the semantic family for partial, pending, and attention states.
+- Warning remains the semantic family for partial, pending, and attention states, and may use magenta neon when clearly labeled.
 - Decorative intensity must not change financial meaning.
 
 ## Formatting

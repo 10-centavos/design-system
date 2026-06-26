@@ -43,6 +43,7 @@
     const textColor = tokenValue("--color-text-default");
     const mutedColor = tokenValue("--color-text-muted");
     const borderColor = tokenValue("--color-border-default");
+    const animationDuration = Number.parseInt(tokenValue("--motion-duration-slow"), 10) || 240;
 
     chart = new Chart(canvas, {
       type,
@@ -64,6 +65,10 @@
       options: {
         responsive: true,
         maintainAspectRatio: true,
+        animation: {
+          duration: animationDuration,
+          easing: type === "bar" ? "easeOutBack" : "easeOutCubic"
+        },
         plugins: {
           legend: {
             display: true,

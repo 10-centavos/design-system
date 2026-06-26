@@ -90,6 +90,7 @@ This contract does NOT govern:
 ### Visual Energy
 
 * Brand, info, success, warning, and danger colors MAY be saturated, neon-leaning, and playful.
+* Warning accents MAY use shock-pink or magenta neon when paired with labels, icons, or status text.
 * Financial meaning MUST remain conventional: income and funded states use success semantics, expenses and overspent states use danger semantics, partial states use warning semantics, and goals in progress use brand semantics.
 * Vibrant color MUST be paired with label, icon, sign, progress, or status text for financial meaning.
 * Vibrant surfaces MUST still meet WCAG AA contrast requirements.

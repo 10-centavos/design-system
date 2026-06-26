@@ -5,8 +5,10 @@
 - Adopted Atomic Design as the composition model for foundations, atoms, molecules, organisms, templates, and pages.
 - Updated contracts and docs to allow a more vibrant, game-inspired financial UI while preserving semantic financial meaning.
 - Shifted primitive palette toward more saturated brand, info, success, warning, danger, and savings colors.
+- Shifted warning accents toward shock pink and magenta neon.
 - Added `info` as a documented `Badge` tone.
 - Added `PixelCanvas` as a reusable animated pixel component for decorative motion and modal accents.
+- Added more expressive motion to `ChartPanel` with token-based duration and playful easing.
 
 ## 0.1.0
 
