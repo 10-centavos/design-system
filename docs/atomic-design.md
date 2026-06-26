@@ -23,7 +23,7 @@ The model is adapted for a financial product: playful presentation is allowed, b
 
 ## Current Mapping
 
-- Atoms: `Alert`, `Badge`, `Button`, `Card`, `Input`, `MoneyValue`, `Progress`, `Select`, `Skeleton`.
+- Atoms: `Alert`, `Badge`, `Button`, `Card`, `Input`, `MoneyValue`, `PixelCanvas`, `Progress`, `Select`, `Skeleton`.
 - Molecules: `BudgetCategoryRow`, `GoalCard`, `TransactionItem`.
 - Organisms: `ChartPanel`, composed dashboard panels in Storybook previews.
 - Templates and pages: represented in `src/stories/` as examples for consuming applications.

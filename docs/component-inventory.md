@@ -5,7 +5,7 @@ All components live in `src/components/` and are exported from `src/components/i
 ## Atomic Design Levels
 
 - Foundations: `tokens/`, `src/styles/tokens.css`, `tailwind.config.cjs`.
-- Atoms: `Alert`, `Badge`, `Button`, `Card`, `Input`, `MoneyValue`, `Progress`, `Select`, `Skeleton`.
+- Atoms: `Alert`, `Badge`, `Button`, `Card`, `Input`, `MoneyValue`, `PixelCanvas`, `Progress`, `Select`, `Skeleton`.
 - Molecules: `BudgetCategoryRow`, `GoalCard`, `TransactionItem`.
 - Organisms: `ChartPanel` and composed dashboard regions in Storybook previews.
 - Templates/pages: represented by `src/stories/LayoutPreview.svelte` and other Storybook previews.
@@ -61,6 +61,14 @@ Atomic level: atom.
 
 - Variants: text, card, row
 - Accessibility: `role="status"` and screen-reader label
+
+## PixelCanvas
+
+Atomic level: atom.
+
+- Variants: wave, pulse, spark
+- Usage: decorative pixel animations for hero bands, modal accents, and status surfaces
+- Accessibility: decorative by default, respects reduced-motion, and should not be the only carrier of meaning
 
 ## Alert
 

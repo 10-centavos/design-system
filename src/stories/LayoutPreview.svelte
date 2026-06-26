@@ -56,7 +56,7 @@
 
   <main id="dashboard" class="mx-auto grid max-w-screen-xl gap-layout-lg px-layout-md py-layout-md">
     <section class="grid gap-layout-md lg:grid-cols-[1.2fr_0.8fr]">
-      <Card className="shadow-none">
+      <Card>
         <div class="grid gap-component-md">
           <div class="flex flex-wrap items-center justify-between gap-component-md">
             <div class="grid gap-component-xs">
@@ -179,10 +179,9 @@
             { label: "Receitas", tone: "income", values: [3200, 4200, 4800, 5400] },
             { label: "Despesas", tone: "expense", values: [900, 1240, 1800, 2380] }
           ]}
-          className="shadow-none"
         />
 
-        <Card className="shadow-none">
+        <Card>
           <div class="grid gap-component-md">
             <div class="flex items-center gap-component-sm">
               <Sparkles aria-hidden="true" class="size-component-md text-brand-default" />
@@ -197,7 +196,7 @@
       </div>
 
       <aside class="grid content-start gap-component-md lg:col-span-2">
-        <GoalCard title="Reserva de emergencia" current={7200} target={12000} className="shadow-none" />
+        <GoalCard title="Reserva de emergencia" current={7200} target={12000} />
 
         <ChartPanel
           title="Distribuicao de despesas"
@@ -205,10 +204,9 @@
           type="doughnut"
           labels={["Mercado", "Transporte", "Servicos"]}
           series={[{ label: "Despesas", tone: "expense", values: [286, 172, 130] }]}
-          className="shadow-none"
         />
 
-        <Card className="shadow-none">
+        <Card>
           <form class="grid gap-component-md">
             <Input id="layout-search" name="layout-search" type="search" inputMode="search" label="Buscar" placeholder="Buscar transacoes" />
             <Select id="layout-category" name="layout-category" label="Categoria" value="food" options={categoryOptions} />

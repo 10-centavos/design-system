@@ -39,7 +39,7 @@
 
   <div class="grid gap-component-md lg:grid-cols-3">
     {#each modals as item}
-      <Card className="shadow-none">
+      <Card>
         <div class="grid gap-component-md">
           <div class="flex items-center justify-between gap-component-md">
             <svelte:component this={item.icon} aria-hidden="true" class="size-component-lg text-brand-default" />
@@ -64,6 +64,5 @@
       { label: "Score", tone: "brand", values: [72, 84, 60] },
       { label: "Atencao", tone: "warning", values: [68, 20, 30] }
     ]}
-    className="shadow-none"
   />
 </section>

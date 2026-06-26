@@ -1,10 +1,11 @@
 <script lang="ts">
-  import { Bot, CircleDollarSign } from "@lucide/svelte";
+import { Bot, CircleDollarSign } from "@lucide/svelte";
 
-  import Alert from "../components/Alert.svelte";
-  import Badge from "../components/Badge.svelte";
-  import Button from "../components/Button.svelte";
-  import Modal from "../components/Modal.svelte";
+import Alert from "../components/Alert.svelte";
+import Badge from "../components/Badge.svelte";
+import Button from "../components/Button.svelte";
+import Modal from "../components/Modal.svelte";
+import PixelCanvas from "../components/PixelCanvas.svelte";
 
   export let variant: "confirm" | "edit-budget" | "agent" = "confirm";
 
@@ -13,20 +14,7 @@
 
 {#if variant === "confirm"}
   <Modal open={open} title="Boss fight: excluir categoria" description="Esta acao remove a categoria do orcamento e afeta os totais do mes.">
-    <div class="grid grid-cols-12 gap-1" aria-hidden="true">
-      <span class="h-2 rounded-component-sm bg-brand-default"></span>
-      <span class="h-2 rounded-component-sm bg-brand-hover"></span>
-      <span class="h-2 rounded-component-sm bg-info-default"></span>
-      <span class="h-2 rounded-component-sm bg-success-default"></span>
-      <span class="h-2 rounded-component-sm bg-warning-default"></span>
-      <span class="h-2 rounded-component-sm bg-danger-default"></span>
-      <span class="h-2 rounded-component-sm bg-success-default"></span>
-      <span class="h-2 rounded-component-sm bg-info-default"></span>
-      <span class="h-2 rounded-component-sm bg-brand-default"></span>
-      <span class="h-2 rounded-component-sm bg-warning-default"></span>
-      <span class="h-2 rounded-component-sm bg-danger-default"></span>
-      <span class="h-2 rounded-component-sm bg-brand-hover"></span>
-    </div>
+    <PixelCanvas variant="spark" className="h-layout-sm" />
     <Alert tone="warning" title="Verifique os impactos" message="As despesas continuam registradas; a categoria apenas sai do agrupamento." />
     <div class="flex flex-wrap gap-component-sm">
       <Badge tone="danger">boss fight</Badge>
@@ -40,20 +28,7 @@
   </Modal>
 {:else if variant === "edit-budget"}
   <Modal open={open} title="Atualizar carga" description="Ajuste um valor sem perder a leitura do status atual.">
-    <div class="grid grid-cols-12 gap-1" aria-hidden="true">
-      <span class="h-2 rounded-component-sm bg-info-default"></span>
-      <span class="h-2 rounded-component-sm bg-info-default"></span>
-      <span class="h-2 rounded-component-sm bg-brand-default"></span>
-      <span class="h-2 rounded-component-sm bg-success-default"></span>
-      <span class="h-2 rounded-component-sm bg-success-default"></span>
-      <span class="h-2 rounded-component-sm bg-warning-default"></span>
-      <span class="h-2 rounded-component-sm bg-brand-hover"></span>
-      <span class="h-2 rounded-component-sm bg-success-default"></span>
-      <span class="h-2 rounded-component-sm bg-warning-default"></span>
-      <span class="h-2 rounded-component-sm bg-info-default"></span>
-      <span class="h-2 rounded-component-sm bg-brand-default"></span>
-      <span class="h-2 rounded-component-sm bg-success-default"></span>
-    </div>
+    <PixelCanvas variant="wave" className="h-layout-sm" />
     <div class="grid gap-component-sm text-sm">
       <div class="flex items-center gap-component-sm text-brand-default">
         <CircleDollarSign aria-hidden="true" class="size-component-md" />
@@ -68,20 +43,7 @@
   </Modal>
 {:else}
   <Modal open={open} title="Acoes do agente" description="O sistema propõe a melhor proxima acao com base no fluxo e no risco.">
-    <div class="grid grid-cols-12 gap-1" aria-hidden="true">
-      <span class="h-2 rounded-component-sm bg-brand-default"></span>
-      <span class="h-2 rounded-component-sm bg-info-default"></span>
-      <span class="h-2 rounded-component-sm bg-success-default"></span>
-      <span class="h-2 rounded-component-sm bg-warning-default"></span>
-      <span class="h-2 rounded-component-sm bg-danger-default"></span>
-      <span class="h-2 rounded-component-sm bg-brand-hover"></span>
-      <span class="h-2 rounded-component-sm bg-info-default"></span>
-      <span class="h-2 rounded-component-sm bg-success-default"></span>
-      <span class="h-2 rounded-component-sm bg-warning-default"></span>
-      <span class="h-2 rounded-component-sm bg-danger-default"></span>
-      <span class="h-2 rounded-component-sm bg-brand-default"></span>
-      <span class="h-2 rounded-component-sm bg-info-default"></span>
-    </div>
+    <PixelCanvas variant="pulse" className="h-layout-sm" />
     <div class="grid gap-component-sm">
       <div class="flex items-center gap-component-sm text-brand-default">
         <Bot aria-hidden="true" class="size-component-md" />

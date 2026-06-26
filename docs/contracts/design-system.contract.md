@@ -102,6 +102,7 @@ This contract does NOT govern:
 * The system MUST use motion tokens for transitions.
 * The system MUST NOT use abrupt UI changes without feedback.
 * The system SHOULD use subtle animations for clarity (not decoration).
+* The system MAY use canvas-based pixel animations for decorative accents, provided they use semantic token colors, respect reduced-motion preferences, and do not block interaction.
 
 ---
 

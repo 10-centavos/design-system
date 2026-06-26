@@ -80,9 +80,8 @@
               { label: "Receitas", tone: "income", values: [3200, 4200, 4800, 5400] },
               { label: "Despesas", tone: "expense", values: [900, 1240, 1800, 2380] }
             ]}
-            className="shadow-none"
           />
-          <Card className="shadow-none">
+          <Card>
             <div class="grid gap-component-md">
               <h2 class="text-xl font-semibold">Transacoes recentes</h2>
               <TransactionItem title="Salario" category="income" date="26/06/2026" amount={5400} type="income" />
@@ -92,7 +91,7 @@
         </div>
 
         <aside class="grid content-start gap-component-md lg:col-span-2">
-          <Card className="border-brand-default bg-brand-subtle shadow-none">
+          <Card className="border-brand-default bg-brand-subtle">
             <div class="grid gap-component-md">
               <div class="flex items-center gap-component-sm text-brand-default">
                 <Bot aria-hidden="true" class="size-component-lg" />
@@ -133,7 +132,7 @@
               { label: "Alocado", tone: "brand", values: [1200, 500, 900] },
               { label: "Gasto", tone: "expense", values: [840, 620, 0] }
             ]}
-          />
+            />
           <Alert tone="danger" title="Acao necessaria" message="Transporte esta overspent e deve ser revisado." />
         </aside>
       </section>

@@ -138,6 +138,12 @@ theme: {
 
   * Tailwind + tokens exclusively
 
+### Canvas Motion
+
+* Canvas-based pixel animations MAY be implemented as Svelte components when they read semantic token colors and remain decorative or explicitly labeled.
+* Canvas animation components MUST respect reduced-motion preferences.
+* Canvas animation components SHOULD be reusable and parameterized instead of copy-pasted per screen.
+
 ---
 
 ### Component Variants

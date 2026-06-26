@@ -40,8 +40,8 @@
 
   const surfaces = [
     { label: "Surface", className: "rounded-component-lg border border-border-default bg-background-surface shadow-surface" },
-    { label: "Muted", className: "rounded-component-lg border border-border-default bg-background-muted shadow-none" },
-    { label: "Brand", className: "rounded-component-lg border border-brand-default bg-brand-subtle shadow-none" }
+    { label: "Muted", className: "rounded-component-lg border border-border-default bg-background-muted" },
+    { label: "Brand", className: "rounded-component-lg border border-brand-default bg-brand-subtle" }
   ];
 </script>
 

@@ -7,6 +7,7 @@ export { default as ChartPanel } from "./ChartPanel.svelte";
 export { default as GoalCard } from "./GoalCard.svelte";
 export { default as Input } from "./Input.svelte";
 export { default as Modal } from "./Modal.svelte";
+export { default as PixelCanvas } from "./PixelCanvas.svelte";
 export { default as MoneyValue } from "./MoneyValue.svelte";
 export { default as Progress } from "./Progress.svelte";
 export { default as Select } from "./Select.svelte";
