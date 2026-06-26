@@ -19,7 +19,7 @@
         "background": "{color.background.surface}",
         "backgroundHover": "{color.background.muted}",
         "text": "{color.text.default}",
-        "border": "{color.border.default}",
+        "border": "{color.border.strong}",
         "radius": "{radius.component.full}",
         "paddingX": "{spacing.component.lg}",
         "paddingY": "{spacing.component.sm}"
@@ -47,7 +47,7 @@
     "card": {
       "background": "{color.background.surface}",
       "border": "{color.border.default}",
-      "shadow": "{shadow.surface}",
+      "shadow": "{shadow.elevated}",
       "radius": "{radius.component.lg}",
       "padding": "{spacing.component.lg}"
     },

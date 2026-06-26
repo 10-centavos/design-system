@@ -23,7 +23,7 @@
     "border": {
       "default": "{color.neutral.200}",
       "strong": "{color.neutral.300}",
-      "focus": "{color.brand.500}",
+      "focus": "{color.info.500}",
       "danger": "{color.danger.500}",
       "success": "{color.success.500}",
       "warning": "{color.warning.500}"

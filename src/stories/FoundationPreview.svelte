@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { CircleDollarSign, Layers, Palette, Ruler, Sparkles, Type } from "@lucide/svelte";
+  import Icon from "../components/Icon.svelte";
 
   const primitiveColors = [
     {
@@ -168,7 +168,7 @@
 <section class="grid gap-layout-lg bg-background-canvas p-layout-md text-text-default">
   <header class="grid gap-component-sm pb-layout-md">
     <div class="flex items-center gap-component-sm text-brand-default">
-      <Layers aria-hidden="true" class="size-component-lg" />
+      <Icon name="abacus" className="size-component-lg" />
       <span class="text-sm font-semibold uppercase">Foundations</span>
     </div>
     <h1 class="text-3xl font-semibold">Tokens, cor e ritmo do sistema</h1>
@@ -179,7 +179,7 @@
 
   <section class="grid gap-component-md">
     <div class="flex items-center gap-component-sm">
-      <Palette aria-hidden="true" class="size-component-md text-brand-default" />
+      <Icon name="magic-potion" className="size-component-md text-brand-default" />
       <h2 class="text-xl font-semibold">Paleta primitiva</h2>
     </div>
     <div class="grid gap-component-md lg:grid-cols-2 xl:grid-cols-3">
@@ -198,7 +198,7 @@
 
   <section class="grid gap-component-md">
     <div class="flex items-center gap-component-sm">
-      <CircleDollarSign aria-hidden="true" class="size-component-md text-brand-default" />
+      <Icon name="book-aura" className="size-component-md text-brand-default" />
       <h2 class="text-xl font-semibold">Tokens semânticos</h2>
     </div>
     <div class="grid gap-component-md lg:grid-cols-2">
@@ -217,7 +217,7 @@
 
   <section class="grid gap-component-md">
     <div class="flex items-center gap-component-sm">
-      <Type aria-hidden="true" class="size-component-md text-brand-default" />
+      <Icon name="scroll-unfurled" className="size-component-md text-brand-default" />
       <h2 class="text-xl font-semibold">Tipografia</h2>
     </div>
     <article class="grid gap-component-md rounded-component-lg bg-background-surface p-component-lg shadow-surface">
@@ -233,7 +233,7 @@
 
   <section class="grid gap-component-md">
     <div class="flex items-center gap-component-sm">
-      <Ruler aria-hidden="true" class="size-component-md text-brand-default" />
+      <Icon name="3d-stairs" className="size-component-md text-brand-default" />
       <h2 class="text-xl font-semibold">Espaçamento e formas</h2>
     </div>
     <div class="grid gap-component-md lg:grid-cols-3">
@@ -272,7 +272,7 @@
           {/each}
         </div>
         <div class="flex items-center gap-component-sm text-brand-default">
-          <Sparkles aria-hidden="true" class="size-component-md" />
+          <Icon name="magic-swirl" className="size-component-md" />
           <span class="text-sm font-medium">Reduced motion é respeitado por animações em canvas e gráficos.</span>
         </div>
       </article>

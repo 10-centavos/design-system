@@ -12,4 +12,4 @@ export default meta;
 
 type Story = StoryObj<typeof meta>;
 
-export const Lucide: Story = {};
+export const NerdIcons: Story = {};

@@ -23,56 +23,56 @@
     "border": {
       "default": "{color.neutral.700}",
       "strong": "{color.neutral.500}",
-      "focus": "{color.info.100}",
+      "focus": "{color.brand.500}",
       "danger": "{color.danger.100}",
       "success": "{color.success.100}",
       "warning": "{color.warning.100}"
     },
     "brand": {
-      "default": "{color.brand.100}",
-      "hover": "{color.brand.50}",
+      "default": "{color.brand.500}",
+      "hover": "{color.brand.100}",
       "subtle": "{color.brand.700}",
       "contrast": "{color.neutral.950}"
     },
     "success": {
-      "default": "{color.success.100}",
-      "hover": "{color.success.50}",
+      "default": "{color.success.500}",
+      "hover": "{color.success.100}",
       "subtle": "{color.success.700}",
       "contrast": "{color.neutral.950}"
     },
     "warning": {
-      "default": "{color.warning.100}",
-      "hover": "{color.warning.50}",
+      "default": "{color.warning.500}",
+      "hover": "{color.warning.100}",
       "subtle": "{color.warning.700}",
       "contrast": "{color.neutral.950}"
     },
     "danger": {
-      "default": "{color.danger.100}",
-      "hover": "{color.danger.50}",
+      "default": "{color.danger.500}",
+      "hover": "{color.danger.100}",
       "subtle": "{color.danger.700}",
       "contrast": "{color.neutral.950}"
     },
     "info": {
-      "default": "{color.info.100}",
-      "hover": "{color.info.50}",
+      "default": "{color.info.500}",
+      "hover": "{color.info.100}",
       "subtle": "{color.info.700}",
       "contrast": "{color.neutral.950}"
     },
     "financial": {
-      "income": "{color.success.100}",
+      "income": "{color.success.500}",
       "incomeSubtle": "{color.success.700}",
-      "expense": "{color.danger.100}",
+      "expense": "{color.danger.500}",
       "expenseSubtle": "{color.danger.700}",
-      "savings": "{color.savings.100}",
+      "savings": "{color.savings.500}",
       "savingsSubtle": "{color.savings.700}",
-      "debt": "{color.debt.100}",
+      "debt": "{color.debt.500}",
       "debtSubtle": "{color.debt.700}",
-      "funded": "{color.success.100}",
-      "partial": "{color.warning.100}",
+      "funded": "{color.success.500}",
+      "partial": "{color.warning.500}",
       "empty": "{color.neutral.300}",
-      "overspent": "{color.danger.100}",
-      "goalComplete": "{color.success.100}",
-      "goalProgress": "{color.info.100}"
+      "overspent": "{color.danger.500}",
+      "goalComplete": "{color.success.500}",
+      "goalProgress": "{color.brand.500}"
     }
   }
 }
