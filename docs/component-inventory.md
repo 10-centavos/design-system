@@ -16,6 +16,7 @@ Atomic level: atom.
 
 - Variants: `primary`, `secondary`, `ghost`, `danger`
 - States: default, hover, active through native button behavior, disabled, loading
+- Composition: default text slot, optional `icon` slot, optional `iconOnly` mode for compact actions
 - Accessibility: native button, `aria-busy` while loading, visible focus
 
 ## Input

@@ -1,5 +1,7 @@
 import type { Meta, StoryObj } from "@storybook/svelte-vite";
 
+import { Plus } from "@lucide/svelte";
+
 import Button from "./Button.svelte";
 
 const meta = {
@@ -13,7 +15,9 @@ const meta = {
     loading: false
   },
   argTypes: {
-    variant: { control: "select", options: ["primary", "secondary", "ghost", "danger"] }
+    variant: { control: "select", options: ["primary", "secondary", "ghost", "danger"] },
+    iconPosition: { control: "select", options: ["left", "right"] },
+    iconOnly: { control: "boolean" }
   },
   render: (args) => ({ Component: Button, props: args })
 } satisfies Meta<typeof Button>;
@@ -50,4 +54,21 @@ export const Loading: Story = {
     label: "Salvando",
     loading: true
   }
+};
+
+export const IconOnly: Story = {
+  args: {
+    ariaLabel: "Adicionar transacao",
+    iconOnly: true,
+    label: "Adicionar transacao"
+  },
+  render: (args) => ({
+    Component: Button,
+    props: args,
+    slots: {
+      icon: {
+        Component: Plus
+      }
+    }
+  })
 };

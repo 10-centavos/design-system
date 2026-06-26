@@ -50,8 +50,10 @@
       </nav>
 
       <Button variant="primary">
-        <Plus aria-hidden="true" class="size-component-md" />
         Novo plano
+        <svelte:fragment slot="icon">
+          <Plus aria-hidden="true" class="size-component-md" />
+        </svelte:fragment>
       </Button>
     </div>
   </header>

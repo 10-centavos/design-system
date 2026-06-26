@@ -47,8 +47,10 @@
         <Badge tone="victory">lvl 07</Badge>
         <Badge tone="warning">streak 9d</Badge>
         <Button variant="primary">
-          <Plus aria-hidden="true" class="size-component-md" />
           Nova missao
+          <svelte:fragment slot="icon">
+            <Plus aria-hidden="true" class="size-component-md" />
+          </svelte:fragment>
         </Button>
       </div>
     </div>
@@ -156,12 +158,16 @@
 
           <div class="grid gap-component-sm sm:grid-cols-2">
             <Button variant="primary">
-              <Zap aria-hidden="true" class="size-component-md" />
               Usar poder
+              <svelte:fragment slot="icon">
+                <Zap aria-hidden="true" class="size-component-md" />
+              </svelte:fragment>
             </Button>
             <Button variant="secondary">
-              <Trophy aria-hidden="true" class="size-component-md text-warning-default" />
               Ver combo
+              <svelte:fragment slot="icon">
+                <Trophy aria-hidden="true" class="size-component-md text-warning-default" />
+              </svelte:fragment>
             </Button>
           </div>
         </div>
@@ -211,8 +217,10 @@
             <Input id="layout-search" name="layout-search" type="search" inputMode="search" label="Buscar" placeholder="Buscar transacoes" />
             <Select id="layout-category" name="layout-category" label="Categoria" value="food" options={categoryOptions} />
             <Button variant="secondary">
-              <Search aria-hidden="true" class="size-component-md" />
               Filtrar
+              <svelte:fragment slot="icon">
+                <Search aria-hidden="true" class="size-component-md" />
+              </svelte:fragment>
             </Button>
           </form>
         </Card>
