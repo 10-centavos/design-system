@@ -45,7 +45,7 @@ Atomic level: atom.
 
 Atomic level: atom.
 
-- Tones: neutral, income, expense, savings, debt, info, warning, danger, success
+- Tones: neutral, income, expense, savings, debt, info, warning, danger, success, victory
 - Usage: pair with labels for financial state clarity
 
 ## Progress

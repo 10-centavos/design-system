@@ -12,7 +12,7 @@
   $: signedAmount = type === "expense" ? -Math.abs(amount) : Math.abs(amount);
 </script>
 
-<article class={`flex items-center justify-between gap-component-md border-b border-border-default py-component-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus ${className}`}>
+<article class={`flex items-center justify-between gap-component-md py-component-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus ${className}`}>
   <div class="min-w-0">
     <p class="truncate font-medium text-text-default">{title}</p>
     <div class="mt-component-xs flex items-center gap-component-sm text-sm text-text-muted">

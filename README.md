@@ -44,6 +44,13 @@ npm run build
 
 `npm run build` generates token outputs, validates tokens, components, and documentation, then builds Storybook.
 
+## Release Pipeline
+
+- `/.github/workflows/release.yml` uses `release-please` to create versioned releases from commits on `main`.
+- `.github/release-please-config.json` defines the Node release strategy.
+- `.github/.release-please-manifest.json` stores the current automated version.
+- `/.github/workflows/storybook-pages.yml` publishes the static site to GitHub Pages on `main`.
+
 ## GitHub Pages
 
 The workflow in `.github/workflows/storybook-pages.yml` publishes `storybook-static/` to GitHub Pages on pushes to `main` and manual dispatches.

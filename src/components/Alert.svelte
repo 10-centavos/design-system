@@ -5,14 +5,14 @@
   export let className = "";
 
   $: toneClass = {
-    info: "border-info-default bg-info-subtle text-text-default",
-    success: "border-success-default bg-success-subtle text-text-success",
-    warning: "border-warning-default bg-warning-subtle text-text-warning",
-    danger: "border-danger-default bg-danger-subtle text-text-danger"
+    info: "bg-info-subtle text-text-default",
+    success: "bg-success-subtle text-text-success",
+    warning: "bg-warning-subtle text-text-warning",
+    danger: "bg-danger-subtle text-text-danger"
   }[tone];
 </script>
 
-<div class={`rounded-component-md border p-component-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus ${toneClass} ${className}`} role={tone === "danger" ? "alert" : "status"}>
+<div class={`rounded-component-md p-component-lg shadow-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus ${toneClass} ${className}`} role={tone === "danger" ? "alert" : "status"}>
   {#if title}
     <p class="font-semibold">{title}</p>
   {/if}

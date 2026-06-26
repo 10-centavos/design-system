@@ -14,7 +14,7 @@
   $: badgeTone = status === "overspent" ? "danger" : status === "funded" ? "success" : status === "partial" ? "warning" : "neutral";
 </script>
 
-<article class={`grid gap-component-md rounded-component-md border border-border-default bg-background-surface p-component-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus ${className}`}>
+<article class={`grid gap-component-md rounded-component-md bg-background-surface p-component-lg shadow-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus ${className}`}>
   <div class="flex items-start justify-between gap-component-md">
     <div>
       <p class="font-medium text-text-default">{name}</p>

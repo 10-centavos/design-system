@@ -22,7 +22,7 @@
     <span>{label}</span>
   {/if}
   <select
-    class="w-full rounded-component-md border border-border-default bg-background-surface px-component-md py-component-sm text-text-default transition-colors duration-normal ease-standard focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus disabled:cursor-not-allowed disabled:opacity-60 aria-invalid:border-border-danger"
+    class="w-full rounded-component-md bg-background-surface px-component-md py-component-sm text-text-default shadow-surface transition-colors duration-normal ease-standard focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus disabled:cursor-not-allowed disabled:opacity-60 aria-invalid:ring-2 aria-invalid:ring-border-danger"
     {id}
     {name}
     {disabled}

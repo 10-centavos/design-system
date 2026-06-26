@@ -13,7 +13,7 @@ const meta = {
   argTypes: {
     tone: {
       control: "select",
-      options: ["neutral", "income", "expense", "savings", "debt", "info", "warning", "danger", "success"]
+      options: ["neutral", "income", "expense", "savings", "debt", "info", "warning", "danger", "success", "victory"]
     }
   },
   render: (args) => ({ Component: Badge, props: args })
@@ -50,5 +50,12 @@ export const Info: Story = {
   args: {
     label: "info",
     tone: "info"
+  }
+};
+
+export const Victory: Story = {
+  args: {
+    label: "victory",
+    tone: "victory"
   }
 };

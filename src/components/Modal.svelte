@@ -45,7 +45,7 @@
     onclick={handleBackdropClick}
   >
     <div class="flex min-h-full items-center justify-center">
-      <section class={`grid w-full gap-component-lg rounded-component-lg border border-brand-default bg-background-surface p-component-lg shadow-elevated ${sizeClass} ${className}`}>
+      <section class={`grid w-full gap-component-lg rounded-component-lg bg-background-surface p-component-lg shadow-elevated ${sizeClass} ${className}`}>
         <div class="h-1 w-full rounded-component-full bg-brand-default" aria-hidden="true"></div>
         <header class="flex items-start justify-between gap-component-md">
           <div class="grid gap-component-xs">
@@ -60,7 +60,7 @@
           {#if dismissible}
             <button
               type="button"
-              class="inline-flex size-component-lg items-center justify-center rounded-component-sm border border-border-default bg-background-muted text-text-muted transition-colors duration-normal ease-standard hover:border-border-focus hover:bg-brand-subtle hover:text-brand-default focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus"
+              class="inline-flex size-component-lg items-center justify-center rounded-component-sm bg-background-muted text-text-muted transition-colors duration-normal ease-standard hover:bg-brand-subtle hover:text-brand-default focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus"
               aria-label="Fechar modal"
               onclick={close}
             >
@@ -73,7 +73,7 @@
           <slot />
         </div>
 
-        <footer class="flex flex-wrap items-center justify-end gap-component-sm border-t border-border-default pt-component-md">
+        <footer class="flex flex-wrap items-center justify-end gap-component-sm pt-component-md">
           <slot name="footer" />
         </footer>
       </section>

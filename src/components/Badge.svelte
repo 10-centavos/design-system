@@ -8,7 +8,8 @@
     | "info"
     | "warning"
     | "danger"
-    | "success" = "neutral";
+    | "success"
+    | "victory" = "neutral";
   export let label = "";
   export let className = "";
 
@@ -21,7 +22,8 @@
     info: "bg-info-subtle text-info-default",
     warning: "bg-warning-subtle text-text-warning",
     danger: "bg-danger-subtle text-text-danger",
-    success: "bg-success-subtle text-text-success"
+    success: "bg-success-subtle text-text-success",
+    victory: "bg-brand-subtle text-brand-default"
   }[tone];
 </script>
 

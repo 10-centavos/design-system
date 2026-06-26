@@ -8,7 +8,7 @@
 
   $: variantClass = {
     primary: "bg-brand-default text-brand-contrast hover:bg-brand-hover",
-    secondary: "border border-border-default bg-background-surface text-text-default hover:bg-background-muted",
+    secondary: "bg-background-muted text-text-default hover:bg-brand-subtle",
     ghost: "bg-background-surface text-text-default hover:bg-background-muted",
     danger: "bg-danger-default text-danger-contrast hover:bg-danger-hover"
   }[variant];
@@ -21,7 +21,7 @@
   aria-busy={loading}
 >
   {#if loading}
-    <span aria-hidden="true" class="size-component-md rounded-full border border-brand-contrast"></span>
+    <span aria-hidden="true" class="size-component-md rounded-full bg-brand-contrast/80"></span>
   {/if}
   <span><slot>{label}</slot></span>
 </button>

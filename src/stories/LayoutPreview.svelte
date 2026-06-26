@@ -44,7 +44,7 @@
       </nav>
 
       <div class="flex items-center gap-component-sm">
-        <Badge tone="success">lvl 07</Badge>
+        <Badge tone="victory">lvl 07</Badge>
         <Badge tone="warning">streak 9d</Badge>
         <Button variant="primary">
           <Plus aria-hidden="true" class="size-component-md" />

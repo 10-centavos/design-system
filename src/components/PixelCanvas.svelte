@@ -192,7 +192,7 @@
 
 <div
   bind:this={viewport}
-  class={`relative overflow-hidden rounded-component-lg border border-border-default bg-background-surface ${className}`}
+  class={`relative overflow-hidden rounded-component-lg bg-background-surface shadow-surface ${className}`}
   aria-hidden={decorative}
   aria-label={decorative ? undefined : label}
   role={decorative ? "presentation" : "img"}

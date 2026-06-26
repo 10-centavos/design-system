@@ -12,7 +12,7 @@
   $: completed = percent >= 100;
 </script>
 
-<article class={`grid gap-component-md rounded-component-lg border border-border-default bg-background-surface p-component-lg shadow-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus ${className}`}>
+<article class={`grid gap-component-md rounded-component-lg bg-background-surface p-component-lg shadow-surface focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-focus ${className}`}>
   <div class="flex items-start justify-between gap-component-md">
     <div>
       <h3 class="text-lg font-semibold text-text-default">{title}</h3>
