@@ -57,6 +57,7 @@ This contract does NOT govern:
 
 * The system MUST use semantic tokens as the default interface for UI.
 * Token names MUST remain semantic even when primitive values become more vibrant, neon, or experimental.
+* Inter MUST be the primary type family token for body, heading, label, and numeric usage.
 
 ---
 
@@ -97,6 +98,7 @@ Examples:
 ### Theming
 
 * The system MUST support theming via semantic tokens.
+* Dark mode MUST be the default theme surfaced in product UI and Storybook.
 * Dark mode MUST override semantic tokens only.
 * Primitive tokens MUST remain unchanged across themes.
 

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import LayoutPreview from "./LayoutPreview.svelte";
 
 const meta = {
-  title: "Layouts/Dashboard",
+  title: "Templates/Dashboard",
   component: LayoutPreview,
   parameters: {
     layout: "fullscreen"

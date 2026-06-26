@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import Input from "./Input.svelte";
 
 const meta = {
-  title: "Components/Input",
+  title: "Atoms/Input",
   component: Input,
   tags: ["autodocs"],
   args: {

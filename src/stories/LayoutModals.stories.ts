@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import LayoutModalPreview from "./LayoutModalPreview.svelte";
 
 const meta = {
-  title: "Layouts/Modals",
+  title: "Templates/Modals",
   component: LayoutModalPreview,
   parameters: {
     layout: "fullscreen"

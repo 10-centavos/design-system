@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import Progress from "./Progress.svelte";
 
 const meta = {
-  title: "Components/Progress",
+  title: "Atoms/Progress",
   component: Progress,
   tags: ["autodocs"],
   args: {

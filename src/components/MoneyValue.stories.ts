@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import MoneyValue from "./MoneyValue.svelte";
 
 const meta = {
-  title: "Components/MoneyValue",
+  title: "Atoms/Money Value",
   component: MoneyValue,
   tags: ["autodocs"],
   args: {

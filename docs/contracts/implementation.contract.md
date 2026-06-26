@@ -5,6 +5,7 @@
 Define the functional behavior, user flows, UI composition, and interaction logic of the 10 Centavos product using the Design System and Design Tokens.
 
 This contract translates product intent into implementable, testable UI flows.
+The default product presentation is dark, cyberpunk-leaning, and gamified, while preserving financial clarity and semantic color meaning.
 
 ---
 
@@ -68,6 +69,7 @@ Provide a high-level view of financial status.
   * `card` components for sections
   * `numeric.typography` for values
   * semantic colors for financial states
+  * dark-first surfaces and Inter-based typography tokens for the primary reading layer
 
 * The dashboard MUST be composed as an Atomic Design page using template regions, organism-level panels, molecule-level financial rows/cards, and atom-level controls.
 

@@ -52,6 +52,7 @@ This contract does NOT govern:
 
   * Svelte (component framework)
   * Tailwind CSS (styling system)
+  * Inter as the primary UI typeface through design tokens
 
 * The system MUST NOT use:
 
@@ -122,6 +123,7 @@ theme: {
   * `bg-brand`
   * `text-success`
   * `border-default`
+* The default UI theme MUST be dark-first and token-driven, with light theme exposed as a secondary token mode.
 
 ---
 

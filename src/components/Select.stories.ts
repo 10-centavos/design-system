@@ -9,7 +9,7 @@ const options = [
 ];
 
 const meta = {
-  title: "Components/Select",
+  title: "Atoms/Select",
   component: Select,
   tags: ["autodocs"],
   args: {

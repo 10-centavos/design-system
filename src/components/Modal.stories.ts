@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import ModalPreview from "../stories/ModalPreview.svelte";
 
 const meta = {
-  title: "Components/Modal",
+  title: "Organisms/Modal",
   component: ModalPreview,
   parameters: {
     layout: "fullscreen"

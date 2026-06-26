@@ -5,6 +5,7 @@
 Define the visual language, interaction patterns, and UI consistency rules for the 10 Centavos product.
 
 This contract ensures that all interfaces are predictable, scalable, accessible, and aligned with financial clarity principles.
+The system is dark-first, cyberpunk-leaning, and gamified by default, while keeping financial meaning explicit and readable.
 
 ---
 
@@ -54,6 +55,8 @@ This contract does NOT govern:
 * The system MUST maintain visual consistency across all screens.
 * The system MUST represent financial states visually and clearly.
 * The system MUST prioritize readability of numeric values.
+* The system MUST use Inter as the primary typeface for UI and Storybook foundations.
+* The system MUST default to dark mode as the primary presentation theme.
 * The system MUST use a vibrant, neon-leaning visual language for engagement while preserving financial semantics, contrast, and readability.
 * The system MUST follow Atomic Design as its composition model.
 

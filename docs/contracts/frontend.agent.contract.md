@@ -90,6 +90,7 @@ This contract does NOT govern:
   * color semantics for financial states
 
 * The agent MAY use a vibrant, game-inspired presentation only when financial state meaning remains explicit through text, icon, sign, or progress semantics.
+* The agent MUST treat dark mode as the default visual context and use Inter-based typography tokens for readable financial UI.
 
 ---
 

@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import TransactionItem from "./TransactionItem.svelte";
 
 const meta = {
-  title: "Components/TransactionItem",
+  title: "Molecules/Transaction Item",
   component: TransactionItem,
   tags: ["autodocs"],
   args: {

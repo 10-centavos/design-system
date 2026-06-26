@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import BudgetCategoryRow from "./BudgetCategoryRow.svelte";
 
 const meta = {
-  title: "Components/BudgetCategoryRow",
+  title: "Molecules/Budget Category Row",
   component: BudgetCategoryRow,
   tags: ["autodocs"],
   args: {

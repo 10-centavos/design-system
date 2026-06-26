@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import ChartPanel from "./ChartPanel.svelte";
 
 const meta = {
-  title: "Components/ChartPanel",
+  title: "Organisms/Chart Panel",
   component: ChartPanel,
   tags: ["autodocs"],
   args: {

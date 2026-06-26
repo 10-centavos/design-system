@@ -16,6 +16,7 @@
   },
   "exports": {
     "./components": "./src/components/index.ts",
+    "./styles/base": "./src/styles/base.css",
     "./styles": "./src/styles/tokens.css",
     "./tailwind": "./tailwind.config.cjs",
     "./tokens/primitive": "./tokens/primitive.json",
@@ -38,5 +39,8 @@
     "svelte": "^5.56.4",
     "tailwindcss": "^3.4.19",
     "vite": "^8.1.0"
+  },
+  "dependencies": {
+    "@fontsource/inter": "^5.2.8"
   }
 }

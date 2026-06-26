@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import Alert from "./Alert.svelte";
 
 const meta = {
-  title: "Components/Alert",
+  title: "Atoms/Alert",
   component: Alert,
   tags: ["autodocs"],
   args: {

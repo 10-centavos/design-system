@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import Badge from "./Badge.svelte";
 
 const meta = {
-  title: "Components/Badge",
+  title: "Atoms/Badge",
   component: Badge,
   tags: ["autodocs"],
   args: {

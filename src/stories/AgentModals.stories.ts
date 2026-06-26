@@ -3,7 +3,7 @@ import type { Meta, StoryObj } from "@storybook/svelte-vite";
 import AgentModalsPreview from "./AgentModalsPreview.svelte";
 
 const meta = {
-  title: "Modals/Agent Modals",
+  title: "Organisms/Agent Modals",
   component: AgentModalsPreview,
   parameters: {
     layout: "fullscreen"

@@ -5,7 +5,7 @@ import { Plus } from "@lucide/svelte";
 import Button from "./Button.svelte";
 
 const meta = {
-  title: "Components/Button",
+  title: "Atoms/Button",
   component: Button,
   tags: ["autodocs"],
   args: {

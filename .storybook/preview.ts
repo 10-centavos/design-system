@@ -1,5 +1,6 @@
 import type { Preview } from "@storybook/svelte-vite";
 
+import "../src/styles/base.css";
 import "../src/styles/tokens.css";
 import "./storybook.css";
 
@@ -24,7 +25,7 @@ const preview: Preview = {
     theme: {
       name: "Theme",
       description: "Design token theme",
-      defaultValue: "light",
+      defaultValue: "dark",
       toolbar: {
         icon: "circlehollow",
         items: [
