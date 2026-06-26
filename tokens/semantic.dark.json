@@ -1,0 +1,78 @@
+{
+  "$schema": "./schema.json",
+  "meta": {
+    "name": "10 Centavos semantic dark tokens",
+    "version": "0.1.0",
+    "layer": "semantic",
+    "theme": "dark"
+  },
+  "color": {
+    "background": {
+      "canvas": "{color.neutral.950}",
+      "surface": "{color.neutral.900}",
+      "muted": "{color.neutral.800}"
+    },
+    "text": {
+      "default": "{color.neutral.50}",
+      "muted": "{color.neutral.300}",
+      "inverse": "{color.neutral.950}",
+      "danger": "{color.danger.100}",
+      "success": "{color.success.100}",
+      "warning": "{color.warning.100}"
+    },
+    "border": {
+      "default": "{color.neutral.700}",
+      "strong": "{color.neutral.500}",
+      "focus": "{color.brand.100}",
+      "danger": "{color.danger.100}",
+      "success": "{color.success.100}",
+      "warning": "{color.warning.100}"
+    },
+    "brand": {
+      "default": "{color.brand.100}",
+      "hover": "{color.brand.50}",
+      "subtle": "{color.brand.700}",
+      "contrast": "{color.neutral.950}"
+    },
+    "success": {
+      "default": "{color.success.100}",
+      "hover": "{color.success.50}",
+      "subtle": "{color.success.700}",
+      "contrast": "{color.neutral.950}"
+    },
+    "warning": {
+      "default": "{color.warning.100}",
+      "hover": "{color.warning.50}",
+      "subtle": "{color.warning.700}",
+      "contrast": "{color.neutral.950}"
+    },
+    "danger": {
+      "default": "{color.danger.100}",
+      "hover": "{color.danger.50}",
+      "subtle": "{color.danger.700}",
+      "contrast": "{color.neutral.950}"
+    },
+    "info": {
+      "default": "{color.info.100}",
+      "hover": "{color.info.50}",
+      "subtle": "{color.info.700}",
+      "contrast": "{color.neutral.950}"
+    },
+    "financial": {
+      "income": "{color.success.100}",
+      "incomeSubtle": "{color.success.700}",
+      "expense": "{color.danger.100}",
+      "expenseSubtle": "{color.danger.700}",
+      "savings": "{color.savings.100}",
+      "savingsSubtle": "{color.savings.700}",
+      "debt": "{color.debt.100}",
+      "debtSubtle": "{color.debt.700}",
+      "funded": "{color.success.100}",
+      "partial": "{color.warning.100}",
+      "empty": "{color.neutral.300}",
+      "overspent": "{color.danger.100}",
+      "goalComplete": "{color.success.100}",
+      "goalProgress": "{color.brand.100}"
+    }
+  }
+}

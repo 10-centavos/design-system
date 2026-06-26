@@ -1,0 +1,42 @@
+{
+  "name": "@10-centavos/design-system",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Token-driven Svelte and Tailwind design system for 10 Centavos.",
+  "scripts": {
+    "build:tokens": "node scripts/build-tokens.mjs",
+    "validate:tokens": "node scripts/validate-tokens.mjs",
+    "validate:components": "node scripts/validate-components.mjs",
+    "validate:docs": "node scripts/validate-docs.mjs",
+    "validate": "npm run validate:tokens && npm run validate:components && npm run validate:docs",
+    "storybook": "npm run build:tokens && storybook dev -p 6006",
+    "build:storybook": "npm run build:tokens && storybook build",
+    "build": "npm run build:tokens && npm run validate && npm run build:storybook"
+  },
+  "exports": {
+    "./components": "./src/components/index.ts",
+    "./styles": "./src/styles/tokens.css",
+    "./tailwind": "./tailwind.config.cjs",
+    "./tokens/primitive": "./tokens/primitive.json",
+    "./tokens/semantic-light": "./tokens/semantic.light.json",
+    "./tokens/semantic-dark": "./tokens/semantic.dark.json",
+    "./tokens/component": "./tokens/component.json"
+  },
+  "peerDependencies": {
+    "svelte": "^5.0.0",
+    "tailwindcss": "^3.4.0"
+  },
+  "devDependencies": {
+    "@lucide/svelte": "^1.21.0",
+    "@storybook/svelte-vite": "^10.4.6",
+    "@sveltejs/vite-plugin-svelte": "^7.1.2",
+    "autoprefixer": "^10.5.2",
+    "chart.js": "^4.5.1",
+    "postcss": "^8.5.15",
+    "storybook": "^10.4.6",
+    "svelte": "^5.56.4",
+    "tailwindcss": "^3.4.19",
+    "vite": "^8.1.0"
+  }
+}

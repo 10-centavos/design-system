@@ -1,0 +1,6 @@
+node_modules/
+storybook-static/
+dist/
+.svelte-kit/
+.DS_Store
+npm-debug.log*

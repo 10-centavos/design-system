@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "10 Centavos token file",
+  "type": "object",
+  "required": ["meta"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["name", "version", "layer"],
+      "properties": {
+        "name": { "type": "string" },
+        "version": { "type": "string" },
+        "layer": { "type": "string" },
+        "theme": { "type": "string" }
+      }
+    }
+  }
+}

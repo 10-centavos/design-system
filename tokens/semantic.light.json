@@ -1,0 +1,131 @@
+{
+  "$schema": "./schema.json",
+  "meta": {
+    "name": "10 Centavos semantic light tokens",
+    "version": "0.1.0",
+    "layer": "semantic",
+    "theme": "light"
+  },
+  "color": {
+    "background": {
+      "canvas": "{color.neutral.50}",
+      "surface": "{color.neutral.0}",
+      "muted": "{color.neutral.100}"
+    },
+    "text": {
+      "default": "{color.neutral.900}",
+      "muted": "{color.neutral.500}",
+      "inverse": "{color.neutral.0}",
+      "danger": "{color.danger.700}",
+      "success": "{color.success.700}",
+      "warning": "{color.warning.700}"
+    },
+    "border": {
+      "default": "{color.neutral.200}",
+      "strong": "{color.neutral.300}",
+      "focus": "{color.brand.500}",
+      "danger": "{color.danger.500}",
+      "success": "{color.success.500}",
+      "warning": "{color.warning.500}"
+    },
+    "brand": {
+      "default": "{color.brand.600}",
+      "hover": "{color.brand.700}",
+      "subtle": "{color.brand.50}",
+      "contrast": "{color.neutral.0}"
+    },
+    "success": {
+      "default": "{color.success.600}",
+      "hover": "{color.success.700}",
+      "subtle": "{color.success.50}",
+      "contrast": "{color.neutral.0}"
+    },
+    "warning": {
+      "default": "{color.warning.600}",
+      "hover": "{color.warning.700}",
+      "subtle": "{color.warning.50}",
+      "contrast": "{color.neutral.900}"
+    },
+    "danger": {
+      "default": "{color.danger.600}",
+      "hover": "{color.danger.700}",
+      "subtle": "{color.danger.50}",
+      "contrast": "{color.neutral.0}"
+    },
+    "info": {
+      "default": "{color.info.600}",
+      "hover": "{color.info.700}",
+      "subtle": "{color.info.50}",
+      "contrast": "{color.neutral.0}"
+    },
+    "financial": {
+      "income": "{color.success.600}",
+      "incomeSubtle": "{color.success.50}",
+      "expense": "{color.danger.600}",
+      "expenseSubtle": "{color.danger.50}",
+      "savings": "{color.savings.600}",
+      "savingsSubtle": "{color.savings.50}",
+      "debt": "{color.debt.600}",
+      "debtSubtle": "{color.debt.50}",
+      "funded": "{color.success.600}",
+      "partial": "{color.warning.600}",
+      "empty": "{color.neutral.500}",
+      "overspent": "{color.danger.600}",
+      "goalComplete": "{color.success.600}",
+      "goalProgress": "{color.brand.600}"
+    }
+  },
+  "spacing": {
+    "component": {
+      "xs": "{spacing.1}",
+      "sm": "{spacing.2}",
+      "md": "{spacing.3}",
+      "lg": "{spacing.4}",
+      "xl": "{spacing.6}"
+    },
+    "layout": {
+      "sm": "{spacing.4}",
+      "md": "{spacing.6}",
+      "lg": "{spacing.8}",
+      "xl": "{spacing.12}"
+    }
+  },
+  "radius": {
+    "component": {
+      "sm": "{radius.sm}",
+      "md": "{radius.md}",
+      "lg": "{radius.lg}",
+      "full": "{radius.full}"
+    }
+  },
+  "shadow": {
+    "surface": "{shadow.sm}",
+    "elevated": "{shadow.md}"
+  },
+  "typography": {
+    "body": {
+      "fontFamily": "{font.family.sans}",
+      "fontSize": "{font.size.base}",
+      "fontWeight": "{font.weight.regular}",
+      "lineHeight": "{font.lineHeight.normal}"
+    },
+    "label": {
+      "fontFamily": "{font.family.sans}",
+      "fontSize": "{font.size.sm}",
+      "fontWeight": "{font.weight.medium}",
+      "lineHeight": "{font.lineHeight.normal}"
+    },
+    "heading": {
+      "h1": "{font.size.3xl}",
+      "h2": "{font.size.2xl}",
+      "h3": "{font.size.xl}"
+    },
+    "numeric": {
+      "fontFamily": "{font.family.numeric}",
+      "fontVariantNumeric": "tabular-nums",
+      "fontSize": "{font.size.base}",
+      "fontWeight": "{font.weight.semibold}",
+      "lineHeight": "{font.lineHeight.tight}"
+    }
+  }
+}

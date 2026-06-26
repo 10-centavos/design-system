@@ -1,0 +1,68 @@
+{
+  "$schema": "./schema.json",
+  "meta": {
+    "name": "10 Centavos component tokens",
+    "version": "0.1.0",
+    "layer": "component"
+  },
+  "component": {
+    "button": {
+      "primary": {
+        "background": "{color.brand.default}",
+        "backgroundHover": "{color.brand.hover}",
+        "text": "{color.brand.contrast}",
+        "radius": "{radius.component.md}",
+        "paddingX": "{spacing.component.lg}",
+        "paddingY": "{spacing.component.sm}"
+      },
+      "secondary": {
+        "background": "{color.background.surface}",
+        "backgroundHover": "{color.background.muted}",
+        "text": "{color.text.default}",
+        "border": "{color.border.default}",
+        "radius": "{radius.component.md}",
+        "paddingX": "{spacing.component.lg}",
+        "paddingY": "{spacing.component.sm}"
+      },
+      "danger": {
+        "background": "{color.danger.default}",
+        "backgroundHover": "{color.danger.hover}",
+        "text": "{color.danger.contrast}",
+        "radius": "{radius.component.md}",
+        "paddingX": "{spacing.component.lg}",
+        "paddingY": "{spacing.component.sm}"
+      }
+    },
+    "field": {
+      "background": "{color.background.surface}",
+      "text": "{color.text.default}",
+      "placeholder": "{color.text.muted}",
+      "border": "{color.border.default}",
+      "borderFocus": "{color.border.focus}",
+      "borderError": "{color.border.danger}",
+      "radius": "{radius.component.md}",
+      "paddingX": "{spacing.component.md}",
+      "paddingY": "{spacing.component.sm}"
+    },
+    "card": {
+      "background": "{color.background.surface}",
+      "border": "{color.border.default}",
+      "shadow": "{shadow.surface}",
+      "radius": "{radius.component.lg}",
+      "padding": "{spacing.component.lg}"
+    },
+    "badge": {
+      "radius": "{radius.component.full}",
+      "paddingX": "{spacing.component.sm}",
+      "paddingY": "{spacing.component.xs}"
+    },
+    "progress": {
+      "track": "{color.background.muted}",
+      "radius": "{radius.component.full}",
+      "height": "{spacing.component.sm}"
+    },
+    "focus": {
+      "ring": "{color.border.focus}"
+    }
+  }
+}
