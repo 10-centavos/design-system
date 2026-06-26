@@ -1,11 +1,10 @@
 <script lang="ts">
-import { Bot, CircleDollarSign } from "@lucide/svelte";
-
-import Alert from "../components/Alert.svelte";
-import Badge from "../components/Badge.svelte";
-import Button from "../components/Button.svelte";
-import Modal from "../components/Modal.svelte";
-import PixelCanvas from "../components/PixelCanvas.svelte";
+  import Alert from "../components/Alert.svelte";
+  import Badge from "../components/Badge.svelte";
+  import Button from "../components/Button.svelte";
+  import Icon from "../components/Icon.svelte";
+  import Modal from "../components/Modal.svelte";
+  import PixelCanvas from "../components/PixelCanvas.svelte";
 
   export let variant: "confirm" | "edit-budget" | "agent" = "confirm";
 
@@ -31,7 +30,7 @@ import PixelCanvas from "../components/PixelCanvas.svelte";
     <PixelCanvas variant="wave" className="h-layout-sm" />
     <div class="grid gap-component-sm text-sm">
       <div class="flex items-center gap-component-sm text-brand-default">
-        <CircleDollarSign aria-hidden="true" class="size-component-md" />
+        <Icon name="abacus" className="size-component-md" />
         Carga mensal
       </div>
       <p class="text-text-muted">O agente sugere um ajuste pequeno para transporte e uma reducao em lazer.</p>
@@ -46,7 +45,7 @@ import PixelCanvas from "../components/PixelCanvas.svelte";
     <PixelCanvas variant="pulse" className="h-layout-sm" />
     <div class="grid gap-component-sm">
       <div class="flex items-center gap-component-sm text-brand-default">
-        <Bot aria-hidden="true" class="size-component-md" />
+        <Icon name="robot-helmet" className="size-component-md" />
         Diagnostico do agente
       </div>
       <p class="text-sm text-text-default">Transporte esta overspent e deve ser ajustado antes do fechamento mensal.</p>

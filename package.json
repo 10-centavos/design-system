@@ -42,6 +42,8 @@
   },
   "dependencies": {
     "@fontsource/inter": "^5.2.8",
+    "@iconify-icons/game-icons": "^1.2.1",
+    "@iconify-icons/mdi": "^1.2.48",
     "@iconify-json/game-icons": "^1.2.4",
     "@iconify-json/mdi": "^1.2.3",
     "@iconify/svelte": "^5.2.2"

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { ArrowDownCircle, ArrowUpCircle, Bot, CalendarDays, CircleDollarSign, LayoutDashboard, PiggyBank, Plus, Search, Sparkles, Target, Trophy, Zap } from "@lucide/svelte";
+  import { CalendarDays, PiggyBank, Plus } from "@lucide/svelte";
 
   import Alert from "../components/Alert.svelte";
   import Badge from "../components/Badge.svelte";
@@ -8,6 +8,7 @@
   import Card from "../components/Card.svelte";
   import ChartPanel from "../components/ChartPanel.svelte";
   import GoalCard from "../components/GoalCard.svelte";
+  import Icon from "../components/Icon.svelte";
   import Input from "../components/Input.svelte";
   import MoneyValue from "../components/MoneyValue.svelte";
   import Select from "../components/Select.svelte";
@@ -24,13 +25,13 @@
   <header class="sticky top-0 z-20 border-b border-border-default bg-background-surface/95 backdrop-blur-sm">
     <div class="mx-auto flex max-w-screen-xl flex-wrap items-center justify-between gap-component-md px-layout-md py-component-md">
       <div class="flex items-center gap-component-sm text-sm font-semibold text-brand-default">
-        <CircleDollarSign aria-hidden="true" class="size-component-md" />
+        <Icon name="abacus" className="size-component-md" />
         10 Centavos
       </div>
 
       <nav class="flex flex-wrap items-center gap-component-xs text-sm" aria-label="Secoes">
         <a class="flex items-center gap-component-sm rounded-component-full bg-brand-default px-component-md py-component-xs text-brand-contrast" href="#dashboard">
-          <LayoutDashboard aria-hidden="true" class="size-component-md" />
+          <Icon name="game-console" className="size-component-md" />
           Dashboard
         </a>
         <a class="flex items-center gap-component-sm rounded-component-full bg-background-muted px-component-md py-component-xs text-text-default" href="#orcamento">
@@ -38,7 +39,7 @@
           Orcamento
         </a>
         <a class="flex items-center gap-component-sm rounded-component-full bg-background-muted px-component-md py-component-xs text-text-default" href="#metas">
-          <Target aria-hidden="true" class="size-component-md text-financial-goal-progress" />
+          <Icon name="trophy-cup" className="size-component-md text-financial-goal-progress" />
           Metas
         </a>
       </nav>
@@ -69,7 +70,7 @@
               <h1 class="text-3xl font-semibold">Ganhar XP sem perder o controle do caixa</h1>
             </div>
             <div class="flex items-center gap-component-sm rounded-component-full border border-border-default bg-background-muted px-component-md py-component-xs text-sm">
-              <Trophy aria-hidden="true" class="size-component-md text-warning-default" />
+              <Icon name="trophy-cup" className="size-component-md text-warning-default" />
               420 XP
             </div>
           </div>
@@ -117,7 +118,7 @@
               </div>
               <div class="grid gap-component-xs">
                 <div class="flex items-center gap-component-sm text-sm font-semibold uppercase text-brand-default">
-                  <Bot aria-hidden="true" class="size-component-md" />
+                  <Icon name="robot-helmet" className="size-component-md" />
                   Agente 07
                 </div>
                 <h2 class="text-2xl font-bold">Modo ataque</h2>
@@ -160,13 +161,13 @@
             <Button variant="primary">
               Usar poder
               <svelte:fragment slot="icon">
-                <Zap aria-hidden="true" class="size-component-md" />
+                <Icon name="magic-potion" className="size-component-md" />
               </svelte:fragment>
             </Button>
             <Button variant="secondary">
               Ver combo
               <svelte:fragment slot="icon">
-                <Trophy aria-hidden="true" class="size-component-md text-warning-default" />
+                <Icon name="trophy-cup" className="size-component-md text-warning-default" />
               </svelte:fragment>
             </Button>
           </div>
@@ -190,7 +191,7 @@
         <Card>
           <div class="grid gap-component-md">
             <div class="flex items-center gap-component-sm">
-              <Sparkles aria-hidden="true" class="size-component-md text-brand-default" />
+              <Icon name="magic-swirl" className="size-component-md text-brand-default" />
               <h2 class="text-xl font-semibold">Quest log</h2>
             </div>
             <div class="grid gap-component-sm">
@@ -219,7 +220,7 @@
             <Button variant="secondary">
               Filtrar
               <svelte:fragment slot="icon">
-                <Search aria-hidden="true" class="size-component-md" />
+                <Icon name="magnify" set="mdi" className="size-component-md" />
               </svelte:fragment>
             </Button>
           </form>
